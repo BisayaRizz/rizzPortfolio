@@ -51,7 +51,5 @@ Route::resource('/', FrontendController::class);
 
 Route::middleware(['checkRole:admin'])->group(function () {
     Route::resource('users', UserController::class);
-    
-    
-    });
+});
 
